@@ -6,7 +6,6 @@ html {
   font-family: sans-serif;
 }
 
-$mainColor: #30be73;
 
 .card {
   max-width: 350px;
@@ -25,7 +24,6 @@ $mainColor: #30be73;
     width: 15px;
     letter-spacing: 4px;
     margin-bottom: -10px;
-    border-bottom: 5px solid $mainColor;
   }
 
   &__description {
@@ -41,13 +39,16 @@ $mainColor: #30be73;
     color: #fff;
     margin: 15px 0;
     padding: 10px;
-    background-color: $mainColor;
     border-radius: 6px;
     outline: none;
     cursor: pointer;
-    filter: drop-shadow(0 1px 5px $mainColor);
-    &:hover {
-      background-color: lighten($mainColor, 5%);
-    }
+    filter: drop-shadow(0 0 40px grey);
+      &:hover {
+        transform: scale(1.1);
+      }
   }
+}
+
+.actualColorText{
+  user-select: none;
 }

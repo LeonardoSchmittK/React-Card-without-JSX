@@ -27,7 +27,6 @@ html {
   width: 15px;
   letter-spacing: 4px;
   margin-bottom: -10px;
-  border-bottom: 5px solid #30be73;
 }
 
 .card__description {
@@ -43,15 +42,22 @@ html {
   color: #fff;
   margin: 15px 0;
   padding: 10px;
-  background-color: #30be73;
   border-radius: 6px;
   outline: none;
   cursor: pointer;
-  -webkit-filter: drop-shadow(0 1px 5px #30be73);
-          filter: drop-shadow(0 1px 5px #30be73);
+  -webkit-filter: drop-shadow(0 0 40px grey);
+          filter: drop-shadow(0 0 40px grey);
 }
 
 .card__button--active:hover {
-  background-color: #3acd80;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.actualColorText {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=style.css.map */

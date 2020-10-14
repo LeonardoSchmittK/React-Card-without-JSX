@@ -4,6 +4,7 @@
 - Sass 
 - BEM syntax 
 
+![screenshot](screenshot.png)
 
 - [x] Use props to render the card info
 - [x] Learn something
