@@ -1,0 +1,53 @@
+*,
+html {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+$mainColor: #30be73;
+
+.card {
+  max-width: 350px;
+  height: auto;
+  background-color: #ffffff;
+  margin: 200px auto;
+  padding: 30px;
+  box-shadow: inset 0 0 0.4em #979595bb;
+  border-radius: 10px;
+  border: 3px solid transparent;
+
+  &:hover {
+    border: 3px solid #b4b1b16b;
+  }
+  &__title {
+    width: 15px;
+    letter-spacing: 4px;
+    margin-bottom: -10px;
+    border-bottom: 5px solid $mainColor;
+  }
+
+  &__description {
+    line-height: 25px;
+  }
+
+  &__subtitle {
+    color: #17151896;
+  }
+
+  &__button--active {
+    font-size: 2em;
+    color: #fff;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: $mainColor;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    filter: drop-shadow(0 1px 5px $mainColor);
+    &:hover {
+      background-color: lighten($mainColor, 5%);
+    }
+  }
+}
